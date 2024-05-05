@@ -6,28 +6,103 @@
     <title>portfolio tdg</title>
 
 
+    <link rel="stylesheet" href="cssFiles/main.css">
     <link rel="stylesheet" href="cssFiles/nav.css">
+    <link rel="stylesheet" href="cssFiles/typewriter.css">
 </head>
 
+<style>
 
+    .dot {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 150px;
+        width: 180px;
+        border-radius: 50%;
+    }
+
+    #dot1 {
+        bottom: 10px; 
+        background-color: #ffffff;
+    }
+
+    #dot2 {
+        bottom: -710px; 
+        background-color: #f5f5f5;
+    }
+
+    .dot img {
+        scale: 0.5;
+        transform: translateX(-20px);
+        border-radius: 50%;
+    }
+
+
+    .div-arrow {
+        height: 40px;
+        width: 80px;
+        border-radius: 50%;
+    }
+
+    .div-arrow:hover {
+        cursor: pointer;
+    }
+
+</style>
 
 <body>
     
-    <nav class="nav">
-        <ul class="nav-list">
-            <li><a href="#">Experience</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Resume</a></li>
-        </ul>
-        
-        <a class="nav-toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </a>
-    </nav>
+    <section id="section-nav">
+        <nav class="nav">
+            <a class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
+            <ul class="nav-list">
+                <li><a href="#section-Experience-skills">Experience</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Resume</a></li>
+            </ul>
+        </nav>
+    </section>
+    
     
       
+    <section id="section-landingPage">
+        <div class="landPageIntro typewriter">
+            <h1>Tom de Graaf</h1>
+            <p>This is a fake text. Everything here is just to give an impression of the graphic effect of text in this place. What you read here is an example text. This will later be replaced by the final text, which is not yet known. The fake text is therefore a text that is not actually about anything. The funny thing is that people often read these. Even if people know it is a fake text, they continue reading.</p>
+        </div>
+
+        <span id="dot1" class="dot">
+            <div class="div-arrow"><img src="images/arrow.png" alt=""></div>
+        </span>
+    </section>
+
+
+
+    <section id="section-Experience-skills">
+        <h2>Skills</h2>
+
+        <span id="dot2" class="dot">
+            <div class="div-arrow"><img src="images/arrow.png" alt=""></div>
+        </span>
+    </section>
+
+
+
+    <section id="section-Experience-projects">
+        <h2>Projects</h2>
+    </section>
+
+
+    <section id="section-footer">
+        <footer>footer</footer>
+    </section>
+
 
 </body>
 
