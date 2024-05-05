@@ -1,0 +1,118 @@
+@import url("main.css");  
+  
+
+nav {
+  position: fixed;
+
+  top: 3%;
+  right: 3%;
+  width: auto;
+
+  display: flex;
+  flex-direction: row;
+
+  scale: 1;
+}  
+
+/* ----------------- hamburger --------------------------- */
+
+
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30px;
+  width: 30px;
+  border-radius: 5px;
+  background-color: #daddd9;
+  padding: 7px;
+}
+
+.nav-toggle .bar {
+  height: 6px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #343633;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav-toggle:hover {
+  cursor: pointer;
+}
+
+.x:nth-of-type(1) {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(45deg) translateX(6px) translateY(-3px);
+  transform-origin: top left;
+  width: 31px;
+  background-color: #ec0909;
+}
+
+.x:nth-of-type(2) {
+  transition: all 0.5s ease-in-out;
+  transform-origin: center;
+  width: 0;
+}
+
+.x:nth-of-type(3) {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-45deg) translateX(6px) translateY(3px);
+  transform-origin: bottom left;
+  width: 31px;
+  background-color: #ec0909;
+}
+
+
+  /* ---------------- # list in nav -------------------------- */
+
+
+ul {
+  height: 30px;
+  width: auto;
+  border-radius: 5px;
+  background-color: #daddd9;
+  padding: 7px;
+  margin-right: 20px;
+  margin-top: 0;
+
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+}
+
+ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 4px;
+}
+
+a {
+  text-decoration: none;
+  font-size:1.125rem;
+  color: #343633;
+  transition: all 0.2s;
+}
+
+a:hover {
+  color: #5688c7;
+}
+
+
+
+/* --------------------- verschijning menu -------------------------------------- */
+
+.nav-list {
+  width: 0;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+
+.nav-list.active {
+  width: 400px;
+  transition: width 1s ease-in-out;
+}
+
+
