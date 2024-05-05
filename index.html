@@ -3,15 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio tdg</title>
+    <title>portfolio Tdg</title>
+    <link rel="shortcut icon" href="images/githubIcon.png" type="image/x-icon">
+
 
 
     <link rel="stylesheet" href="cssFiles/main.css">
     <link rel="stylesheet" href="cssFiles/nav.css">
     <link rel="stylesheet" href="cssFiles/typewriter.css">
+    <link rel="stylesheet" href="cssFiles/footer.css">
 </head>
 
 <style>
+
+    .circle {
+        position: absolute;
+        height: 760px;
+        width: 760px;
+        background-color: #c6090917;
+        border-radius: 50%;
+    }
+
+    #circle1 {
+        top: -150px;
+        left: -120px;
+    }
+
+    #circle2 {
+        top: -130px;
+        left: -130px;
+    }
+
+    /* ----------------------------- */
 
     .dot {
         position: absolute;
@@ -23,12 +46,12 @@
     }
 
     #dot1 {
-        bottom: 10px; 
+        bottom: -40px; 
         background-color: #ffffff;
     }
 
     #dot2 {
-        bottom: -710px; 
+        bottom: -760px; 
         background-color: #f5f5f5;
     }
 
@@ -53,6 +76,10 @@
 
 <body>
     
+    <span id="circle1" class="circle"></span>
+    <span id="circle2" class="circle"></span>
+
+
     <section id="section-nav">
         <nav class="nav">
             <a class="nav-toggle">
@@ -100,7 +127,18 @@
 
 
     <section id="section-footer">
-        <footer>footer</footer>
+        <div class="footer">
+            <div id="footer-div-github">
+                <a href="https://github.com/T0m3YY/">
+                    <div class="githublogo"><img src="images/githubIcon.png" alt=""></div>
+                    <span>Github</span>
+                </a>
+            </div>
+
+            <div id="footer-div-initial">
+                <span>TdG - 07</span>
+            </div>
+        </div>
     </section>
 
 

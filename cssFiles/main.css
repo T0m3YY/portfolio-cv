@@ -52,16 +52,17 @@ nav {
     flex-direction: row-reverse;
 
     scale: 1.2;
+    z-index: 10000;
 }  
 
 #section-nav {
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
 
 
 #section-landingPage {
-    height: 630px;
+    height: 580px;
 }
 
 .landPageIntro {
@@ -86,10 +87,13 @@ nav {
 
 
 
-
+@import url("footer.css");
 #section-footer {
+    height: 110px;   
     background-color: #343633;
-    padding: 35px 0;
     padding-left: 13%;
     padding-right: 13%;
+
+    align-content: center;
 }
+

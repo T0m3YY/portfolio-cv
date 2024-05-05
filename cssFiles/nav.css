@@ -34,7 +34,7 @@
   transform: rotate(45deg) translateX(6px) translateY(-3px);
   transform-origin: top left;
   width: 31px;
-  background-color: #ec0909;
+  background-color: #c60909;
 }
 
 .x:nth-of-type(2) {
@@ -48,7 +48,7 @@
   transform: rotate(-45deg) translateX(6px) translateY(3px);
   transform-origin: bottom left;
   width: 31px;
-  background-color: #ec0909;
+  background-color: #c60909;
 }
 
 
@@ -78,14 +78,14 @@ ul li {
   margin-top: 4px;
 }
 
-a {
+.nav a {
   text-decoration: none;
   font-size:1.125rem;
   color: #343633;
   transition: all 0.2s;
 }
 
-a:hover {
+.nav a:hover {
   color: #5688c7;
 }
 
