@@ -1,0 +1,39 @@
+.skill-container {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    width: calc(25% - 10px);
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 25px;
+
+}
+
+.skill:nth-child(n+4) {
+    width: calc(50% - 50px); /* 20px totale marge tussen de items */
+}
+
+.skill:nth-child(n+4):nth-last-child(-n+3) {
+    width: calc(33.33% - 10px);
+}
+
+.skill-image {
+    background-color: rgb(164, 206, 243);
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.skill-text {
+    font-size: 16px;
+    text-align: center;
+}

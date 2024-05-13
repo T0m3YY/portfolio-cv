@@ -27,6 +27,7 @@
     align-items: center;
 
     margin-right: 20px;
+    transition: all 0.3s;
 }
 
 #footer-div-github img {
@@ -45,9 +46,15 @@
     text-decoration: none;
   }
 
-#footer-div-github span:hover {
-    color: #5688c7;
-    transition: all 0.2s;
+#footer-div-github:hover {
+    .githubText {
+        color: #5688c7;
+        transition: all 0.3s;
+    }    
+    .githublogo {
+        background-color: #5688c7;
+        transition: all 0.3s;
+    }
 }
 
   
